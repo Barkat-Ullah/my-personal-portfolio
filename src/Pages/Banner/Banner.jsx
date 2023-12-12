@@ -2,11 +2,15 @@ import { TypeAnimation } from "react-type-animation";
 import { AwesomeButtonProgress } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 import { FaCloudDownloadAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import resume from "../../assets/Resume.pdf";
 import Lottie from "lottie-react";
 import animationImg from "../../assets/Animation.json";
 
+// const resume = "https://drive.google.com/file/d/1idvHOXFvFtPaEc01FYj6TDv3MNDTgQBx/view?usp=sharing"
+
 const Banner = () => {
+    
   return (
     <div>
       <div className="hero min-h-screen ">
@@ -49,7 +53,8 @@ const Banner = () => {
             <p className="py-4 tracking-wide font-sans font-medium text-slate-300 text-justify">
               A MERN stack developer is a professional who specializes in using
               a specific set of technologies for web development. The MERN stack
-              is an acronym that stands for React, NodeJs, ExpressJs, Mongodb etc.
+              is an acronym that stands for React, NodeJs, ExpressJs, Mongodb
+              etc.
             </p>
             {/* <button className="btn btn-primary">Get Started</button> */}
             <div>
@@ -58,7 +63,7 @@ const Banner = () => {
                 My Resume
               </AwesomeButton> */}
 
-              <Link to="https://drive.google.com/file/d/1idvHOXFvFtPaEc01FYj6TDv3MNDTgQBx/view?usp=sharing">
+              <a href={resume} download="Rakib_Hassan_Resume.pdf">
                 <AwesomeButtonProgress
                   after={<FaCloudDownloadAlt className="text-xl" />}
                   type="primary"
@@ -68,7 +73,7 @@ const Banner = () => {
                 >
                   My Resume
                 </AwesomeButtonProgress>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
