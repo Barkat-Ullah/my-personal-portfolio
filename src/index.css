@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.content h1::after{
+    content: "Frontend Developer";
+    animation: textanim 4s linear infinite;
+  }
+
+@keyframes textanim{
+    25%{
+      content: "Mern-stack Developer";
+    }
+    50%{
+      content: "React Developer";
+    }
+    75%{
+      content: "Youtober";
+    }
+  }
+
+
+  .skills{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .skill{
+    width: calc(50% - 20px);
+    margin: 15px 0;
+  }
+  
+  .skill-info{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .skill-bar{
+    height: 3px;
+    background-color: #ddd;
+    margin-top: 14px;
+    position: relative;
+  }
+  
+  .skill-bar::after{
+    content: "";
+    position: absolute;
+    height: 6px;
+    background-color: #48dbfb;
+    bottom: 0;
+  }
+  
+  .html:after{
+    width: 90%;
+  }
+  
+  .css:after{
+    width: 80%;
+  }
+  
+  .js:after{
+    width: 70%;
+  }
+  
+  .php:after{
+    width: 60%;
+  }
+  
+  .mysql:after{
+    width: 90%;
+  }
+  
+  .cs:after{
+    width: 80%;
+  }
