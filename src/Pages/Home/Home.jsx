@@ -1,3 +1,4 @@
+// import ScrollToTop from "react-scroll-to-top";
 import Education from "../../Layout/Education/Education";
 import About from "../About";
 import Banner from "../Banner/Banner";
@@ -8,6 +9,7 @@ import Skill from "../Skill/Skill";
 const Home = () => {
   return (
     <div>
+     
       <Banner />
       <About />
       <Projects />

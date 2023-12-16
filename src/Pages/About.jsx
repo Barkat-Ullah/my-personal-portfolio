@@ -1,4 +1,4 @@
-import { AwesomeButton, AwesomeButtonProgress } from "react-awesome-button";
+import { AwesomeButton } from "react-awesome-button";
 // import { FaCloudDownloadAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "react-awesome-button/dist/styles.css";
@@ -6,6 +6,14 @@ import { CgWebsite } from "react-icons/cg";
 import Swal from "sweetalert2";
 
 const About = () => {
+  const progress = [
+    { title: "Html", percentage: "98%" },
+    { title: "Css", percentage: "90%" },
+    { title: "Tailwind", percentage: "80%" },
+    { title: "Javascript", percentage: "70%" },
+    { title: "React", percentage: "60%" },
+    { title: "MongoDB", percentage: "10%" },
+  ];
   const handleButtonClick = async () => {
     await Swal.fire({
       icon: "info",
@@ -46,6 +54,7 @@ const About = () => {
                   Hassan.
                 </span>
               </h1>
+
               <div className="content my-2 text-transparent bg-gradient-to-br bg-clip-text from-teal-500 via-pink-500 to-sky-500 dark:from-red-200 dark:via-indigo-300 dark:to-red-500 text-3xl font-bold ">
                 <h1>As A </h1>
               </div>
@@ -80,67 +89,43 @@ const About = () => {
           </div>
         </div>
       </div>
-{/* 
-      <div className="skills">
-      <div className="skill w-1/2 md:w-1/3 lg:w-1/4">
-    <div className="skill-info flex justify-between">
-      <span>HTML</span>
-      <span>90%</span>
-    </div>
-    <div className="h-3 bg-gray-300 mt-2 relative">
-      <div className="h-full bg-blue-500" style={{ width: '90%' }}></div>
-    </div>
-  </div>
 
-  <div className="skill w-1/2 md:w-1/3 lg:w-1/4">
-    <div className="skill-info flex justify-between">
-      <span>HTML</span>
-      <span>90%</span>
-    </div>
-    <div className="h-3 bg-gray-300 mt-2 relative">
-      <div className="h-full bg-blue-500" style={{ width: '90%' }}></div>
-    </div>
-  </div>
-
-  <div className="skill w-1/2 md:w-1/3 lg:w-1/4">
-    <div className="skill-info flex justify-between">
-      <span>HTML</span>
-      <span>90%</span>
-    </div>
-    <div className="h-3 bg-gray-300 mt-2 relative">
-      <div className="h-full bg-blue-500" style={{ width: '90%' }}></div>
-    </div>
-  </div>
-  <div className="skill w-1/2 md:w-1/3 lg:w-1/4">
-    <div className="skill-info flex justify-between">
-      <span>HTML</span>
-      <span>90%</span>
-    </div>
-    <div className="h-3 bg-gray-300 mt-2 relative">
-      <div className="h-full bg-blue-500" style={{ width: '90%' }}></div>
-    </div>
-  </div>
-
-  <div className="skill w-1/2 md:w-1/3 lg:w-1/4">
-    <div className="skill-info flex justify-between">
-      <span>HTML</span>
-      <span>90%</span>
-    </div>
-    <div className="h-3 bg-gray-300 mt-2 relative">
-      <div className="h-full bg-blue-500" style={{ width: '90%' }}></div>
-    </div>
-  </div>
-  <div className="skill w-1/2 md:w-1/3 lg:w-1/4">
-    <div className="skill-info flex justify-between">
-      <span>HTML</span>
-      <span>90%</span>
-    </div>
-    <div className="h-3 bg-gray-300 mt-2 relative">
-      <div className="h-full bg-blue-500" style={{ width: '90%' }}></div>
-    </div>
-  </div>
-      </div> */}
-
+      <div className="flex flex-col md:flex-row justify-center items-center gap-4">
+        <div className="text-white flex-1 ml-3 space-y-2 md:ml-8">
+          <h1 className="text-4xl font-sans space-x-2 font-bold text-white ">
+           
+            <span className="text-transparent bg-gradient-to-tr bg-clip-text from-blue-500 via-pink-500 to-red-500 dark:from-sky-300 dark:via-pink-300 dark:to-red-500">
+              Skills
+            </span>
+          </h1>
+          <p className="">
+            Throughout my journey, I've dedicated myself to honing various
+            skills that contribute to my proficiency as a developer. These
+            skills aren't just acquired. Still i am Exploring to the new features.
+          </p>
+        </div>
+        <div className="flex-1">
+          <div className="grid grid-cols-3">
+            {progress.map((progressItem) => (
+              <div
+                key={progressItem.title}
+                className="mt-5 lg:mt-10 radial-progress"
+              >
+                <div className="rounded-lg text-white h-24 md:h-32 w-24 md:w-32 flex flex-col items-center justify-center  text-transparent  bg-sky-400 ">
+                  <div
+                    className="radial-progress"
+                    style={{ "--value": progressItem.percentage }}
+                    role="progressbar"
+                  >
+                    {progressItem.percentage}
+                  </div>
+                  <h3 className="text-sm md:text-base">{progressItem.title}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

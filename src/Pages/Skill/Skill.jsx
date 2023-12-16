@@ -3,21 +3,17 @@ import { BsBrowserFirefox } from "react-icons/bs";
 import {
   FaHtml5,
   FaCss3Alt,
-  FaNodeJs,
   FaReact,
-  FaBootstrap,
   FaGithub,
   FaFigma,
   FaChrome,
   FaEdgeLegacy,
-  FaOpera,
 } from "react-icons/fa";
 import {
   SiJavascript,
   SiTailwindcss,
   SiExpress,
   SiMongodb,
-  SiAdobephotoshop,
 } from "react-icons/si";
 import man from "../../assets/Man.json";
 
@@ -29,11 +25,11 @@ const Skill = () => {
       title: "JavaScript",
       icon: <SiJavascript className="text-yellow-500 rounded" />,
     },
-    { title: "NodeJS", icon: <FaNodeJs className="text-green-600" /> },
+    // { title: "NodeJS", icon: <FaNodeJs className="text-green-600" /> },
   ];
   const frameworks = [
     { title: "React", icon: <FaReact className="text-cyan-400" /> },
-    { title: "Bootstrap", icon: <FaBootstrap className="text-indigo-600" /> },
+    // { title: "Bootstrap", icon: <FaBootstrap className="text-indigo-600" /> },
     { title: "Tailwind", icon: <SiTailwindcss className="text-cyan-400" /> },
     { title: "ExpressJS", icon: <SiExpress className="text-slate-400" /> },
   ];
@@ -41,10 +37,10 @@ const Skill = () => {
     { title: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
     { title: "GitHub", icon: <FaGithub className="text-black" /> },
     { title: "Figma", icon: <FaFigma className="text-pink-500" /> },
-    {
-      title: "Photoshop",
-      icon: <SiAdobephotoshop className="text-cyan-700" />,
-    },
+    // {
+    //   title: "Photoshop",
+    //   icon: <SiAdobephotoshop className="text-cyan-700" />,
+    // },
   ];
   const brewser = [
     { title: "Google Chrome", icon: <FaChrome className="text-green-400" /> },
@@ -52,27 +48,28 @@ const Skill = () => {
       title: "Mozilla Firefox",
       icon: <BsBrowserFirefox className="text-blue-500" />,
     },
-    { title: "Opera", icon: <FaOpera className="text-red-500" /> },
+    // { title: "Opera", icon: <FaOpera className="text-red-500" /> },
     {
       title: "Microsoft Edge",
       icon: <FaEdgeLegacy className="text-sky-600" />,
     },
   ];
 
-
   return (
     <div className=" py-5 md:py-10 px-5 md:px-10">
-       <h2 className="text-center text-xl md:text-4xl space-x-2 font-sans font-bold">
-              <span className="text-transparent bg-gradient-to-br bg-clip-text from-teal-500 via-indigo-500 to-sky-500 dark:from-teal-200 dark:via-indigo-300 dark:to-sky-500 ">
-                My
-              </span>
-              <span className="text-transparent bg-gradient-to-tr bg-clip-text from-blue-500 via-pink-500 to-red-500 dark:from-sky-300 dark:via-pink-300 dark:to-red-500">
-                Skills 
-              </span>
-            </h2>
+      <h2 className="text-center text-xl md:text-4xl space-x-2 font-sans font-bold">
+        <span className="text-transparent bg-gradient-to-br bg-clip-text from-teal-500 via-indigo-500 to-sky-500 dark:from-teal-200 dark:via-indigo-300 dark:to-sky-500 ">
+          My
+        </span>
+        <span className="text-transparent bg-gradient-to-tr bg-clip-text from-blue-500 via-pink-500 to-red-500 dark:from-sky-300 dark:via-pink-300 dark:to-red-500">
+          Skills
+        </span>
+      </h2>
       <div className="flex flex-col-reverse md:flex-row items-center justify-around my-4">
         <div className="w-1/2">
-          <h2 className="text-transparent bg-gradient-to-tr bg-clip-text from-blue-500 via-pink-500 to-red-500 dark:from-sky-300 dark:via-pink-300 dark:to-red-500 text-2xl">Languages:</h2>
+          <h2 className="text-transparent bg-gradient-to-tr bg-clip-text from-blue-500 via-pink-500 to-red-500 dark:from-sky-300 dark:via-pink-300 dark:to-red-500 text-2xl">
+            Languages:
+          </h2>
           <div className="flex flex-wrap mb-4">
             {languages?.map((skill) => (
               <div key={skill.title} className="text-center m-3">
@@ -115,7 +112,9 @@ const Skill = () => {
               </div>
             ))}
           </div>
-          <h2 className="text-transparent bg-gradient-to-tr bg-clip-text from-blue-500 via-pink-500 to-red-500 dark:from-sky-300 dark:via-pink-300 dark:to-red-500 text-2xl">Web Browsers:</h2>
+          <h2 className="text-transparent bg-gradient-to-tr bg-clip-text from-blue-500 via-pink-500 to-red-500 dark:from-sky-300 dark:via-pink-300 dark:to-red-500 text-2xl">
+            Web Browsers:
+          </h2>
           <div className="flex flex-wrap mb-4">
             {brewser?.map((skill) => (
               <div key={skill.title} className="text-center m-3">
@@ -130,13 +129,7 @@ const Skill = () => {
           </div>
         </div>
         <div className="w-1/2">
-          <Lottie
-            
-            animationData={man}
-            loop={true}
-            
-            
-          />
+          <Lottie animationData={man} loop={true} />
         </div>
       </div>
     </div>
