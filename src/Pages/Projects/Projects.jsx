@@ -17,7 +17,7 @@ const Projects = () => {
             Projects
           </span>
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-10 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-10 gap-2">
           <div className="card card-compact w-full pb-4 rounded-md bg-gray-700 shadow-xl">
             <figure>
               <div className="h-72 w-full overflow-scroll overflow-x-hidden">
@@ -36,30 +36,30 @@ const Projects = () => {
               <div className="flex space-x-3 items-center">
                 <FaGithub className="w-8 h-7" />
                 <a
-                  className="link no-underline"
+                  className="link underline-offset-1"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://github.com/Barkat-Ullah/favourite-food-client"
                 >
-                  Client
+                  client
                 </a>
                 <FaGithub className="w-8 h-7" />
                 <a
-                  className="link no-underline"
+                  className="link underline-offset-1"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://github.com/Barkat-Ullah/favourite-food-server"
                 >
-                  Server
+                  Server 
                 </a>
                 <FaLink className="w-7 h-6" />
                 <a
-                  className="link no-underline"
+                  className="link underline-offset-1"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://food-auth-ca6b3.web.app/"
                 >
-                  Live
+                  live
                 </a>
               </div>
             </div>
@@ -82,7 +82,7 @@ const Projects = () => {
               <div className="flex space-x-3 items-center">
                 <FaGithub className="w-8 h-7" />
                 <a
-                  className="link no-underline"
+                  className="link underline-offset-1"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://github.com/Barkat-Ullah/online-group-study-client-site"
@@ -91,7 +91,7 @@ const Projects = () => {
                 </a>
                 <FaGithub className="w-8 h-7" />
                 <a
-                  className="link no-underline"
+                  className="link underline-offset-1"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://github.com/Barkat-Ullah/online-group-study-server-site"
@@ -100,7 +100,7 @@ const Projects = () => {
                 </a>
                 <FaLink className="w-7 h-6" />
                 <a
-                  className="link no-underline"
+                  className="link underline-offset-1"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://obnoxious-chickens.surge.sh/"
@@ -128,7 +128,7 @@ const Projects = () => {
               <div className="flex space-x-3 items-center">
                 <FaGithub className="w-8 h-7" />
                 <a
-                  className="link no-underline"
+                  className="link underline-offset-1"
                   target="_blank"
                   rel="noopener noreferrer"
                   href=" https://github.com/Barkat-Ullah/social-platform-client"
@@ -137,7 +137,7 @@ const Projects = () => {
                 </a>
                 <FaGithub className="w-8 h-7" />
                 <a
-                  className="link no-underline"
+                  className="link underline-offset-1"
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://github.com/Barkat-Ullah/social-platform-server-site"
@@ -146,7 +146,7 @@ const Projects = () => {
                 </a>
                 <FaLink className="w-7 h-6" />
                 <a
-                  className="link no-underline"
+                  className="link underline-offset-1"
                   href="https://online-meet-platform.web.app/"
                 >
                   Live

@@ -3,17 +3,21 @@ import { BsBrowserFirefox } from "react-icons/bs";
 import {
   FaHtml5,
   FaCss3Alt,
+ 
   FaReact,
+  
   FaGithub,
   FaFigma,
   FaChrome,
   FaEdgeLegacy,
+
 } from "react-icons/fa";
 import {
   SiJavascript,
   SiTailwindcss,
   SiExpress,
   SiMongodb,
+
 } from "react-icons/si";
 import man from "../../assets/Man.json";
 
@@ -55,22 +59,21 @@ const Skill = () => {
     },
   ];
 
+
   return (
     <div className=" py-5 md:py-10 px-5 md:px-10">
-      <h2 className="text-center text-xl md:text-4xl space-x-2 font-sans font-bold">
-        <span className="text-transparent bg-gradient-to-br bg-clip-text from-teal-500 via-indigo-500 to-sky-500 dark:from-teal-200 dark:via-indigo-300 dark:to-sky-500 ">
-          My
-        </span>
-        <span className="text-transparent bg-gradient-to-tr bg-clip-text from-blue-500 via-pink-500 to-red-500 dark:from-sky-300 dark:via-pink-300 dark:to-red-500">
-          Skills
-        </span>
-      </h2>
+       <h2 className="text-center text-xl md:text-4xl space-x-2 font-sans font-bold">
+              <span className="text-transparent bg-gradient-to-br bg-clip-text from-teal-500 via-indigo-500 to-sky-500 dark:from-teal-200 dark:via-indigo-300 dark:to-sky-500 ">
+                My
+              </span>
+              <span className="text-transparent bg-gradient-to-tr bg-clip-text from-blue-500 via-pink-500 to-red-500 dark:from-sky-300 dark:via-pink-300 dark:to-red-500">
+                Skills 
+              </span>
+            </h2>
       <div className="flex flex-col-reverse md:flex-row items-center justify-around my-4">
-        <div className="w-1/2">
-          <h2 className="text-transparent bg-gradient-to-tr bg-clip-text from-blue-500 via-pink-500 to-red-500 dark:from-sky-300 dark:via-pink-300 dark:to-red-500 text-2xl">
-            Languages:
-          </h2>
-          <div className="flex flex-wrap mb-4">
+        <div className="w-full md:w-1/2">
+          <h2 className="text-transparent bg-gradient-to-tr bg-clip-text from-blue-500 via-pink-500 to-red-500 dark:from-sky-300 dark:via-pink-300 dark:to-red-500 text-2xl">Languages:</h2>
+          <div className="flex flex-wrap  mb-4">
             {languages?.map((skill) => (
               <div key={skill.title} className="text-center m-3">
                 <div
@@ -112,9 +115,7 @@ const Skill = () => {
               </div>
             ))}
           </div>
-          <h2 className="text-transparent bg-gradient-to-tr bg-clip-text from-blue-500 via-pink-500 to-red-500 dark:from-sky-300 dark:via-pink-300 dark:to-red-500 text-2xl">
-            Web Browsers:
-          </h2>
+          <h2 className="text-transparent bg-gradient-to-tr bg-clip-text from-blue-500 via-pink-500 to-red-500 dark:from-sky-300 dark:via-pink-300 dark:to-red-500 text-2xl">Web Browsers:</h2>
           <div className="flex flex-wrap mb-4">
             {brewser?.map((skill) => (
               <div key={skill.title} className="text-center m-3">
@@ -129,7 +130,13 @@ const Skill = () => {
           </div>
         </div>
         <div className="w-1/2">
-          <Lottie animationData={man} loop={true} />
+          <Lottie
+            
+            animationData={man}
+            loop={true}
+            
+            
+          />
         </div>
       </div>
     </div>

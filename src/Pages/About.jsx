@@ -39,13 +39,13 @@ const About = () => {
           <div className="hero-content flex flex-col items-center justify-between lg:flex-row">
             <div className="md:w-1/2">
               <img
-                className="max-w-sm  rounded-full h-[400px] w-full ml-5"
+                className="max-w-sm rounded-full h-[200px] md:h-[400px] w-full ml-2 md:ml-5"
                 alt="Tailwind CSS Navbar component"
                 src="https://i.ibb.co/B3sw8MR/20221202-161238-2.jpg"
               />
             </div>
             <div className=" md:w-1/2">
-              <h1 className="text-4xl font-sans space-x-2 font-bold text-white ">
+              <h1 className="text-2xl md:text-4xl font-sans space-x-2 font-bold text-white ">
                 Hi, I'm
                 <span className="text-transparent bg-gradient-to-br bg-clip-text from-teal-500 via-indigo-500 to-sky-500 dark:from-teal-200 dark:via-indigo-300 dark:to-sky-500 ml-2 ">
                   Rakib
@@ -55,7 +55,7 @@ const About = () => {
                 </span>
               </h1>
 
-              <div className="content my-2 text-transparent bg-gradient-to-br bg-clip-text from-teal-500 via-pink-500 to-sky-500 dark:from-red-200 dark:via-indigo-300 dark:to-red-500 text-3xl font-bold ">
+              <div className="content my-2 text-transparent bg-gradient-to-br bg-clip-text from-teal-500 via-pink-500 to-sky-500 dark:from-red-200 dark:via-indigo-300 dark:to-red-500 text-xl md:text-3xl font-bold ">
                 <h1>As A </h1>
               </div>
               <p className="py-4  font-sans font-medium text-slate-300 text-justify">

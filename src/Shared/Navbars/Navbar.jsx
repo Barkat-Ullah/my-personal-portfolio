@@ -13,7 +13,7 @@ import animationData from "../../assets/Animation5.json";
 
 const Navbar = () => {
   const navLinks = [
-    { title: "Home", href: "/" },
+    { title: "Home", href: "/home" },
     { title: "about", href: "/about" },
     { title: "Projects", href: "/projects" },
     { title: "My Skills", href: "/skill" },

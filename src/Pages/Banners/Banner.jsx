@@ -3,7 +3,7 @@ import { AwesomeButtonProgress } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 // import { Link } from "react-router-dom";
-import resume from "../../assets/Resume.pdf";
+import resume from "../../assets/Resumes.txt";
 import Lottie from "lottie-react";
 import animationImg from "../../assets/Animation.json";
 

@@ -1,7 +1,8 @@
 // import ScrollToTop from "react-scroll-to-top";
 import Education from "../../Layout/Education/Education";
 import About from "../About";
-import Banner from "../Banner/Banner";
+import Banner from "../Banners/Banner";
+// import Banner from "../Banner/Banner";
 import Contact from "../Contact/Contact";
 import Projects from "../Projects/Projects";
 import Skill from "../Skill/Skill";
