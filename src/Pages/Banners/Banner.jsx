@@ -3,7 +3,7 @@ import { AwesomeButtonProgress } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 // import { Link } from "react-router-dom";
-import resume from "../../assets/Resumes.txt";
+import resume from "../../assets/Barkats resume.pdf";
 import Lottie from "lottie-react";
 import animationImg from "../../assets/Animation.json";
 
@@ -56,14 +56,14 @@ const Banner = () => {
               is an acronym that stands for React, NodeJs, ExpressJs, Mongodb
               etc.
             </p>
-            {/* <button className="btn btn-primary">Get Started</button> */}
+         
             <div>
               {/* <AwesomeButton type="primary" >
                 {" "}
                 My Resume
               </AwesomeButton> */}
 
-              <a href={resume} download="Rakib_Hassan_Resume.pdf">
+              <a href={resume} download="Barkats_Resume.pdf">
                 <AwesomeButtonProgress
                   after={<FaCloudDownloadAlt className="text-xl" />}
                   type="primary"
