@@ -53,7 +53,7 @@ const Banner = () => {
             <p className="py-4 tracking-wide font-sans font-medium text-slate-300 text-justify">
               A MERN stack developer is a professional who specializes in using
               a specific set of technologies for web development. The MERN stack
-              is an acronym that stands for React, NodeJs, ExpressJs, Mongodb
+              is an acronym that stands for React, NodeJs, ExpressJs, Mongodb, Redux
               etc.
             </p>
          
@@ -83,3 +83,5 @@ const Banner = () => {
 };
 
 export default Banner;
+
+
