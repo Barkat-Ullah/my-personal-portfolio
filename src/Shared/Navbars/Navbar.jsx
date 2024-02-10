@@ -1,15 +1,11 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-key */
 
-// import Link from "next/link";
 import { useState } from "react";
-import Lottie from "lottie-react";
-// import AnimatedLink from "./AnimatedLink";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
-// import { RiMenuSearchLine } from "react-icons/ri";
 import { ImCross } from "react-icons/im";
-import animationData from "../../assets/Animation5.json";
+import { TiThMenu } from "react-icons/ti";
 
 const Navbar = () => {
   const navLinks = [
@@ -18,7 +14,6 @@ const Navbar = () => {
     { title: "Projects", href: "/projects" },
     { title: "My Skills", href: "/skill" },
     { title: "contact me", href: "/contact" },
-    
   ];
 
   //   const defaultOptions = {
@@ -77,10 +72,10 @@ const Navbar = () => {
       <nav className="flex justify-between items-center bg-opacity-30 bg-black fixed top-0 right-0 left-0 max-w-6xl mx-auto py-8 lg:py-4 px-2">
         <div className="flex items-center gap-[1ch]">
           <div className="cursor-grab rounded-full " onClick={toggleMenu}>
-            {/* <RiMenuSearchLine /> */}
+           
 
-            <div className="h-16 w-16 rounded-full border-4 border-pink-500">
-              <Lottie animationData={animationData} loop={true} />
+            <div className="h-16 w-16 text-white text-5xl ">
+              <TiThMenu />
             </div>
           </div>
         </div>
@@ -172,7 +167,7 @@ const MobileNavLink = ({ title, href }) => {
       variants={mobileLinkVars}
       className="text-[10px] md:text-xl font-bold text-start space-y-3 uppercase text-pink-500 border-2 border-teal-500 p-3 rounded-xl"
     >
-      <Link to={href} >{title}</Link>
+      <Link to={href}>{title}</Link>
     </motion.div>
   );
 };

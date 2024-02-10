@@ -2,28 +2,21 @@ import { TypeAnimation } from "react-type-animation";
 import { AwesomeButtonProgress } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 import { FaCloudDownloadAlt } from "react-icons/fa";
-// import { Link } from "react-router-dom";
-import resume from "../../assets/Barkat's Resume.pdf";
-import Lottie from "lottie-react";
-import animationImg from "../../assets/Animation.json";
 
-// const resume = "https://drive.google.com/file/d/1idvHOXFvFtPaEc01FYj6TDv3MNDTgQBx/view?usp=sharing"
+
+import resume from "../../assets/Barkat's Resume.pdf";
+import Image from "./Image";
 
 const Banner = () => {
-    
   return (
     <div>
       <div className="hero min-h-screen ">
         <div className="hero-content flex items-center justify-between sm:mt-20 flex-col lg:flex-row-reverse">
-          <div className="w-1/3 mt-32 md:mt-6">
-            <Lottie
-              animationData={animationImg}
-              loop={true}
-              height="99%"
-              width="99%"
-            />
+          <div className="w-1/2 mt-32 md:mt-6">
+            {/* <img className="h-96 w-80" src={image} alt="" /> */}
+            <Image />
           </div>
-          <div className="w-2/3">
+          <div className=" w-full md:w-1/2">
             <h1 className="text-4xl font-sans space-x-2 font-bold text-white ">
               Hi, I'm
               <span className="text-transparent bg-gradient-to-br bg-clip-text from-teal-500 via-indigo-500 to-sky-500 dark:from-teal-200 dark:via-indigo-300 dark:to-sky-500 ml-2 ">
@@ -50,20 +43,15 @@ const Banner = () => {
               />
             </div>
 
-            <p className="py-4 tracking-wide font-sans font-medium text-slate-300 text-justify">
+            <p className="py-4  font-sans font-medium text-slate-300 text-justify">
               A MERN stack developer is a professional who specializes in using
               a specific set of technologies for web development. The MERN stack
-              is an acronym that stands for React, NodeJs, ExpressJs, Mongodb, Redux
-              etc.
+              is an acronym that stands for React, NodeJs, ExpressJs, Mongodb,
+              Redux etc.
             </p>
-         
-            <div>
-              {/* <AwesomeButton type="primary" >
-                {" "}
-                My Resume
-              </AwesomeButton> */}
 
-              <a href={resume} download="Barkats_Resume.pdf">
+            <div className="tooltip tooltip-info tooltip-bottom my-2" data-tip="My Resume">
+              <a  href={resume} download="Barkats_Resume.pdf">
                 <AwesomeButtonProgress
                   after={<FaCloudDownloadAlt className="text-xl" />}
                   type="primary"
@@ -83,5 +71,3 @@ const Banner = () => {
 };
 
 export default Banner;
-
-
