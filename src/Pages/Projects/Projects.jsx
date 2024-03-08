@@ -31,7 +31,7 @@ const Projects = () => {
             </figure>
             <div className="card-body px-3 py-2">
               <h2 className="card-title text-xl font-bold my-3">
-                Food Service
+                Fitness Tracking
               </h2>
               <div className="flex space-x-3 items-center">
                 <FaGithub className="w-8 h-7" />
@@ -39,7 +39,7 @@ const Projects = () => {
                   className="link underline-offset-1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://github.com/Barkat-Ullah/favourite-food-client"
+                  href="https://github.com/Jubayer-Ahmed-Sajid/Fitness-Studio-client-side"
                 >
                   client
                 </a>
@@ -48,16 +48,16 @@ const Projects = () => {
                   className="link underline-offset-1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://github.com/Barkat-Ullah/favourite-food-server"
+                  href="https://github.com/Jubayer-Ahmed-Sajid/Fitness-Studio-server-site"
                 >
-                  Server 
+                  Server
                 </a>
                 <FaLink className="w-7 h-6" />
                 <a
                   className="link underline-offset-1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="https://food-auth-ca6b3.web.app/"
+                  href="https://fitness-studio.surge.sh"
                 >
                   live
                 </a>
