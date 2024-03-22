@@ -1,19 +1,11 @@
 import { AwesomeButton } from "react-awesome-button";
-import ProgressBar from "@ramonak/react-progress-bar";
 import { Link } from "react-router-dom";
 import "react-awesome-button/dist/styles.css";
 import { CgWebsite } from "react-icons/cg";
 import Swal from "sweetalert2";
 
 const About = () => {
-  const progress = [
-    { title: "Html", percentage: "98%" },
-    { title: "Css ", percentage: "90%" },
-    { title: "Tailwind", percentage: "80%" },
-    { title: "Javascript", percentage: "70%" },
-    { title: "React", percentage: "60%" },
-    { title: "MongoDB", percentage: "10%" },
-  ];
+  
   const handleButtonClick = async () => {
     await Swal.fire({
       icon: "info",
@@ -90,43 +82,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-        <div className="text-white flex-1 ml-3 space-y-2 md:ml-8">
-          <h1 className="text-4xl font-sans space-x-2 font-bold text-white ">
-            <span className="text-transparent bg-gradient-to-tr bg-clip-text from-blue-500 via-pink-500 to-red-500 dark:from-sky-300 dark:via-pink-300 dark:to-red-500">
-              Skills
-            </span>
-          </h1>
-          <p className="">
-            Throughout my journey, I've dedicated myself to honing various
-            skills that contribute to my proficiency as a developer. These
-            skills aren't just acquired. Still i am Exploring to the new
-            features.
-          </p>
-        </div>
-        <div className="flex-1 mx-2">
-          <div className="space-y-4 ">
-            {progress.map((skill, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center space-y-2 md:flex-row md:items-center md:space-x-2"
-              >
-                <span className="font-bold text-white w-0 md:w-20">
-                  {skill.title}:
-                </span>
-                <ProgressBar
-                  key={index}
-                  completed={Number(skill.percentage.replace("%", ""))}
-                  maxCompleted={100}
-                  className="ml-2"
-                  height="15px"
-                  width="410px"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+
     </div>
   );
 };

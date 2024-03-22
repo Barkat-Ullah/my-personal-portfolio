@@ -1,4 +1,4 @@
-import img1 from "../../assets/food.png";
+import img1 from "../../assets/studio.png";
 import img2 from "../../assets/study.png";
 import img3 from "../../assets/numerade.png";
 import { FaGithub, FaLink } from "react-icons/fa";
@@ -6,6 +6,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Projects = () => {
+  
   return (
     <div className="px-5 lg:px-28 text-white py-5 md:py-10">
       <div className="my-10">
@@ -33,6 +34,7 @@ const Projects = () => {
               <h2 className="card-title text-xl font-bold my-3">
                 Fitness Tracking
               </h2>
+              <p className=" font-bold">Team Project</p>
               <div className="flex space-x-3 items-center">
                 <FaGithub className="w-8 h-7" />
                 <a
@@ -79,6 +81,7 @@ const Projects = () => {
               <h2 className="card-title text-xl font-bold my-3">
                 Online Study
               </h2>
+              <p className=" font-bold">Individual Project</p>
               <div className="flex space-x-3 items-center">
                 <FaGithub className="w-8 h-7" />
                 <a
@@ -125,6 +128,7 @@ const Projects = () => {
               <h2 className="card-title text-xl font-bold my-3">
                 Social Platform
               </h2>
+              <p className=" font-bold">Individual Project</p>
               <div className="flex space-x-3 items-center">
                 <FaGithub className="w-8 h-7" />
                 <a

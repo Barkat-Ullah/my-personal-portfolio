@@ -2,9 +2,7 @@ import { TypeAnimation } from "react-type-animation";
 import { AwesomeButtonProgress } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 import { FaCloudDownloadAlt } from "react-icons/fa";
-
-
-import resume from "../../assets/Barkat's Resume.pdf";
+import resume from "../../assets/Resume_of_Barkat_Ullah.pdf";
 import Image from "./Image";
 
 const Banner = () => {
@@ -51,7 +49,7 @@ const Banner = () => {
             </p>
 
             <div className="tooltip tooltip-info tooltip-bottom my-2" data-tip="My Resume">
-              <a  href={resume} download="Barkats_Resume.pdf">
+              <a  href={resume} download="Resume_of_Barkat_Ullah.pdf">
                 <AwesomeButtonProgress
                   after={<FaCloudDownloadAlt className="text-xl" />}
                   type="primary"
